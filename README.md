@@ -4,7 +4,7 @@ High-performance, non-blocking firmware developed for **STM32 (Blackpill)** to i
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Non-Blocking Ring Buffer Reception:** Handles incoming UART byte streams safely via interrupt callback (`HAL_UART_RxCpltCallback`) without missing packets.
 * **XBus Protocol Parser:** Automatically validates checksums, detects message IDs (`MID 0x36` MTData2), and extracts data groups based on XDI identifiers.
@@ -14,7 +14,7 @@ High-performance, non-blocking firmware developed for **STM32 (Blackpill)** to i
 
 ---
 
-## 🛠️ Hardware Stack & Connections
+## Hardware Stack & Connections
 
 * **Microcontroller:** STM32 Blackpill (`STM32F401` / `STM32F411`)
 * **IMU:** Xsens MTi-1 (configured in XBus protocol mode)
@@ -26,7 +26,7 @@ High-performance, non-blocking firmware developed for **STM32 (Blackpill)** to i
 
 ---
 
-## 📊 Data Frame Format (USB-CDC)
+## Data Frame Format (USB-CDC)
 
 The microcontroller outputs a formatted string over the virtual serial port every 20ms:
 
